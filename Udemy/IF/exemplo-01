@@ -1,0 +1,26 @@
+<?php
+
+$idadeAtual = 66;
+
+$idadeCrianca = 12;
+$idadeMaior = 18;
+$idadeMelhor = 65;
+
+if($idadeAtual < $idadeCrianca) {
+    echo "Criança";
+} elseif ($idadeAtual < $idadeMaior) {
+    echo "Adolecente";
+}elseif ($idadeAtual < $idadeMelhor){
+    echo "Adulto";
+}else 
+    echo "Idoso";
+
+
+echo "\n";
+
+
+/* Operador ternario */
+
+echo ($idadeAtual < $idadeMaior) ? "Menor de idade" : "Maior";
+
+
