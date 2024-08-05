@@ -3,11 +3,24 @@
 require_once("config.php");
 require_once("/xampp/htdocs/Udemy/dao/Usuario.php");
 
-$usuario = new Usuario();
+// retorna apenas um usuario
+//$usuario = new Usuario();
+//$usuario->loadByID(2);
 
-$usuario->loadByID(2);
+//retorna uma lista
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
-echo($usuario);
+
+//busca login
+//$search = Usuario::search("Ma");
+//echo json_encode($search);
+
+//carrega um usuário com login e senha
+$usuario =new Usuario();
+$usuario->login("Maura Silva", "123456");
+
+echo $usuario;
 
 
 /*
