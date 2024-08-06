@@ -17,11 +17,17 @@ require_once("/xampp/htdocs/Udemy/dao/Usuario.php");
 //echo json_encode($search);
 
 //carrega um usuário com login e senha
-$usuario =new Usuario();
-$usuario->login("Maura Silva", "123456");
+//$usuario =new Usuario();
+//$usuario->login("Maura Silva", "123456");
+//echo $usuario;
 
-echo $usuario;
 
+//insert de um usuario novo
+$aluno = new Usuario("aluno", "@lun0");
+
+$aluno->insert();
+
+echo $aluno;
 
 /*
 //consulta de todos os usuário
